@@ -159,7 +159,7 @@ export default function Services() {
   if (activeCategory === "Development") activeServices = development;
 
   return (
-    <div className="relative px-4 sm:px-12 lg:px-16 xl:px-28 py-16  w-full h-full items-center justify-center text-center overflow-hidden">
+    <div className="relative px-4 sm:px-12 lg:px-16 xl:px-28 pt-16  w-full h-full items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-4 -z-10">
         <Image
           src="/png/services-bg.png"
