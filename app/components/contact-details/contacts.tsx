@@ -86,7 +86,7 @@ export default function Contacts() {
                   href="mailto:hr@unitfactor.org"
                   className="text-base md:text-lg lg:text-xl  font-semibold text-white"
                 >
-                  @unitfactor.org
+                  info@unitfactor.org
                 </a>
               </div>
               <div className="flex items-center gap-3">

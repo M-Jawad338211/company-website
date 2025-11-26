@@ -51,7 +51,7 @@ export default function Footer() {
               href="mailto:hr@unitfactor.org"
               className="text-base sm:text-lg font-medium mt-2"
             >
-              hr@unitfactor.org
+              info@unitfactor.org
             </a>
           </div>
         </div>
