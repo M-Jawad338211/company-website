@@ -9,6 +9,8 @@ const logos = [
   "/svg/frame5.svg",
   "/svg/frame1.svg",
   "/svg/frame2.svg",
+  "/svg/frame1.svg",
+  "/svg/frame2.svg",
 ];
 
 export default function Partnership() {

@@ -39,12 +39,12 @@
 
 .track-2 {
   animation: scroll 30s linear infinite reverse;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .track-3 {
   animation: scroll 35s linear infinite;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 @keyframes scroll {
