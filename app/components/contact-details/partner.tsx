@@ -19,10 +19,27 @@ export default function Partners() {
 
             <Link
               href="/contacts"
-              target="_blank"
-              className="bg-light-gray hover:bg-primary text-primary hover:text-white text-lg sm:text-xl md:text-2xl lg:text-3xl  font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full  mt-6 sm:mt-10 cursor-pointer active:scale-95 duration-150 ease-in-out"
+              className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition lg:mt-6"
             >
               Contact Us
+              <span className="flex items-center justify-center bg-primary group-hover:bg-secondary w-10 h-10 rounded-full">
+                <svg
+                  width="25"
+                  height="33"
+                  viewBox="0 0 25 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="transition duration-300"
+                >
+                  <path
+                    d="M12.3346 25.6667L21.668 16.3333M21.668 16.3333L12.3346 7M21.668 16.3333H3.0013"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
             </Link>
           </div>
         </div>

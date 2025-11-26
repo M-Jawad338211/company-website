@@ -27,10 +27,27 @@ export default function Talents() {
 
           <Link
             href="/contacts"
-            target="_blank"
-            className="bg-white hover:bg-primary text-secondary hover:text-white text-base sm:text-lg md:text-xl lg:text-2xl font-bold px-6 py-3 cursor-pointer rounded-full transition-all mt-8 active:scale-95 duration-150 ease-in-out"
+            className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition mt-8"
           >
             Talk to our Experts
+            <span className="flex items-center justify-center bg-primary group-hover:bg-secondary w-10 h-10 rounded-full">
+              <svg
+                width="25"
+                height="33"
+                viewBox="0 0 25 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="transition duration-300"
+              >
+                <path
+                  d="M12.3346 25.6667L21.668 16.3333M21.668 16.3333L12.3346 7M21.668 16.3333H3.0013"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
           </Link>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Contacts() {
   const strategies = [
     "Expect a response from us within an hour",
@@ -150,12 +151,30 @@ export default function Contacts() {
             />
 
             <div className="flex items-center gap-3 lg:mt-6 ">
-              <button
-                type="submit"
-                className="flex items-center bg-white hover:bg-secondary text-primary hover:text-white px-6 py-2 rounded-full cursor-pointer shadow-lg text-lg md:text-2xl font-semibold active:scale-95 duration-150 ease-in-out"
+              <Link
+                href="/contacts"
+                className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition"
               >
                 Submit
-              </button>
+                <span className="flex items-center justify-center bg-primary group-hover:bg-secondary w-10 h-10 rounded-full">
+                  <svg
+                    width="25"
+                    height="33"
+                    viewBox="0 0 25 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transition duration-300"
+                  >
+                    <path
+                      d="M12.3346 25.6667L21.668 16.3333M21.668 16.3333L12.3346 7M21.668 16.3333H3.0013"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
             </div>
           </form>
         </div>
