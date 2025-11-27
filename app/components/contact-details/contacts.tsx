@@ -87,7 +87,7 @@ export default function Contacts() {
                   href="mailto:hr@unitfactor.org"
                   className="text-base md:text-lg lg:text-xl  font-semibold text-white"
                 >
-                  info@unitfactor.org
+                  admin@unitfactor.org
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -151,10 +151,7 @@ export default function Contacts() {
             />
 
             <div className="flex items-center gap-3 lg:mt-6 ">
-              <Link
-                href="/contacts"
-                className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition"
-              >
+              <button className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition">
                 Submit
                 <span className="flex items-center justify-center bg-primary group-hover:bg-secondary w-10 h-10 rounded-full">
                   <svg
@@ -174,7 +171,7 @@ export default function Contacts() {
                     />
                   </svg>
                 </span>
-              </Link>
+              </button>
             </div>
           </form>
         </div>

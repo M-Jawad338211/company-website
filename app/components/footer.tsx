@@ -30,7 +30,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="w-full bg-black max-w-9xl mx-auto lg:px-20 xl:px-32 pb-12">
+    <div className="w-full max-w-9xl mx-auto lg:px-20 xl:px-32 pb-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-20 text-center">
         <div className="flex flex-col items-center lg:items-start gap-10">
           <Link href="/">
@@ -51,7 +51,7 @@ export default function Footer() {
               href="mailto:hr@unitfactor.org"
               className="text-base sm:text-lg font-medium mt-2"
             >
-              info@unitfactor.org
+              admin@unitfactor.org
             </a>
           </div>
         </div>

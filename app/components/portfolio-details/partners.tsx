@@ -21,7 +21,7 @@ export default function Partners() {
             </motion.h2>
 
             <p className="bg-white text-black rounded-[15px] px-4 py-2 sm:p-3 text-lg md:text-xl  lg:text-2xl xl:text-3xl font-bold">
-              70+ Projects done
+              45+ Projects done
             </p>
 
             <div className="w-2/3 h-px bg-white/75 mt-3 sm:mt-5"></div>
