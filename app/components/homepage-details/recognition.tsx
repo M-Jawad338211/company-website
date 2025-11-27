@@ -14,29 +14,27 @@ export default function Recognition() {
       id: 1,
       type: "video",
       videoUrl: "https://www.youtube.com/embed/H5Q_-gIZIps",
-      videoThumb: "/woman.png",
-      name: "Ola Matafor",
-      designation: "CEO",
-      profilePic: "/woman.png",
-      description:
-        "“UnitFactor helped us scale our business with clean code, strong communication, and real ownership of the project.”",
+      videoThumb: "/jpg/justin.jpeg",
+      name: "Justin Garner",
+      designation: "CEO at OnlineMed",
+      profilePic: "/jpg/justin.jpeg",
+      description: `"Excellent experience working with Unitfactor. The team was very patient and professional throughout."`,
     },
     {
       id: 2,
       type: "video",
       videoUrl: "https://www.youtube.com/embed/H5Q_-gIZIps",
-      videoThumb: "/woman.png",
-      name: "Danial",
-      designation: "CEO",
-      profilePic: "/woman.png",
-      description:
-        "“Their technical skills and project management are top-notch. They delivered everything on time with excellent communication.”",
+      videoThumb: "/jpg/shmaya.jpeg",
+      name: "Shmaya Schwartz",
+      designation: "Business Owner",
+      profilePic: "/jpg/shmaya.jpeg",
+      description: `"Working with Unitfactor was a great experience. They delivered 100% on our requirements with top-quality work in React.js and Next.js. The team ensured the code was optimized for performance, handled every challenge proactively, and kept communication clear and professional throughout."`,
     },
   ];
 
   return (
-    <div className="w-full bg-black text-white px-4 py-10 md:px-20 xl:px-28 relative">
-      <div className="absolute right-20  lg:right-26 top-26 md:top-22 xl:top-35 z-20 flex gap-3 mt-3 lg:mt-0">
+    <div className="w-full bg-black text-white px-4 md:py-10 md:px-20 xl:px-28 relative">
+      <div className="hidden md:flex absolute right-26 md:right-20  lg:right-26 top-26 md:top-22 xl:top-35 z-20 flex gap-3 mt-3 lg:mt-0">
         <div className="swiper-prev bg-white  text-black rounded-full px-4 py-6 flex items-center justify-center cursor-pointer shadow-md text-xl">
           <Image src="/svg/arrow.svg" alt="arrow" width={32} height={18} />
         </div>
@@ -53,7 +51,7 @@ export default function Recognition() {
       <h2 className="max-w-2xl xl:max-w-4xl">
         Long-term <span className="text-light-primary">partnerships</span> is
         what we are always striving to
-        <span className="text-light-primary">build</span>
+        <span className="text-light-primary"> build</span>
       </h2>
 
       <Swiper
@@ -64,11 +62,11 @@ export default function Recognition() {
           nextEl: ".swiper-next",
           prevEl: ".swiper-prev",
         }}
-        className="mt-14"
+        className="md:mt-14"
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start mt-8 lg:mt-0">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start mt-8 lg:mt-0">
               <div className="relative w-full h-[350px] sm:h-[420px] md:h-[450px] rounded-3xl overflow-hidden shadow-xl">
                 <iframe
                   src={card.videoUrl}
@@ -78,14 +76,14 @@ export default function Recognition() {
                 ></iframe>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 md:p-10 flex flex-col gap-8 shadow-xl h-[350px] sm:h-[420px] md:h-[450px]">
+              <div className="bg-white rounded-3xl p-8 md:p-10 flex flex-col gap-2 md:gap-8 shadow-xl h-[420px] md:h-[450px]">
                 <div className="flex items-center gap-4">
                   <Image
                     src={card.profilePic}
-                    width={16}
-                    height={16}
-                    className="w-16 h-16 rounded-full object-cover border border-gray-300"
-                    alt="Profile"
+                    alt={card.name}
+                    width={120}
+                    height={120}
+                    className="rounded-full object-cover mx-auto md:mx-0"
                   />
                   <div>
                     <h3 className="text-2xl font-bold text-black">
@@ -100,6 +98,20 @@ export default function Recognition() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="flex md:hidden justify-center gap-6 mt-10">
+        <div className="swiper-prev bg-white text-black rounded-full px-4 py-6 flex items-center justify-center cursor-pointer shadow-md">
+          <Image src="/svg/arrow.svg" alt="arrow" width={32} height={18} />
+        </div>
+
+        <div className="swiper-next bg-white text-black rounded-full px-4 py-6 flex items-center justify-center cursor-pointer shadow-md">
+          <Image
+            src="/svg/blue-arrow.svg"
+            alt="blue arrow"
+            width={32}
+            height={18}
+          />
+        </div>
+      </div>
     </div>
   );
 }

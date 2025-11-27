@@ -6,13 +6,13 @@ export default function Partners() {
   return (
     <div className="px-6 sm:px-12 md:px-12 lg:px-16 xl:px-28 pb-10 lg:pb-20  xl:pb-24 w-full h-full items-center justify-center text-center bg-black">
       <div className="w-full  mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[20px] md:rounded-[30px] flex flex-col lg:flex-row gap-8 md:gap-12 2xl:gap-0 items-center mt-10">
-        <div className="w-full h-auto lg:space-y-20 flex flex-col items-center lg:items-start justify-center lg:justify-between text-center lg:text-left">
+        <div className="w-full h-auto space-y-6 lg:space-y-20 flex flex-col items-center lg:items-start justify-center lg:justify-between text-center lg:text-left">
           <motion.h2
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="xl:max-w-2xl"
+            className="xl:max-w-2xl "
           >
             Get a <span className="text-light-primary">reliable partner </span>
             that provides solutions for your
@@ -21,7 +21,7 @@ export default function Partners() {
 
           <Link
             href="/contacts"
-            className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition"
+            className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-xl md:text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition"
           >
             Hire Us
             <span className="flex items-center justify-center bg-primary group-hover:bg-secondary w-10 h-10 rounded-full">

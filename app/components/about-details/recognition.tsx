@@ -19,7 +19,9 @@ export default function Recognitions() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="2xl:max-w-6xl"
         >
-          Today Unitfactor stands on market-leading positions and is recognized
+          Today <span className="text-light-primary">Unitfactor</span> stands on
+          market-leading positions and is
+          <span className="text-light-primary"> recognized </span>
           globally
         </motion.h2>
       </div>

@@ -54,7 +54,8 @@ export default function Testimonials() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-white text-center md:text-left max-w-3xl"
         >
-          Our Partners find numerous reasons to Love Us
+          Our <span className="text-light-primary">Partners</span> find numerous
+          reasons to <span className="text-light-primary">Love Us</span>
         </motion.h2>
 
         <div className="flex flex-col md:flex-row justify-between gap-6">

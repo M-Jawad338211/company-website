@@ -15,7 +15,9 @@ export default function Partners() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="xl:pr-16  text-center md:text-left  max-w-2xl"
             >
-              We transform Ideas into design Success Stories
+              We <span className="text-light-primary">transform</span> Ideas
+              into design Success{" "}
+              <span className="text-light-primary">Stories</span>
             </motion.h2>
 
             <p className="bg-white text-black rounded-[15px] px-4 py-2 sm:p-3 text-lg md:text-xl  lg:text-2xl xl:text-3xl font-bold">

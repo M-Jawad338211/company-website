@@ -16,7 +16,9 @@ export default function Talents() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="max-w-[500px] lg:max-w-xl xl:max-w-4xl"
           >
-            We provide innovative design solutions & expert talents
+            We provide <span className="text-light-primary">innovative </span>
+            design solutions & expert{" "}
+            <span className="text-light-primary">talents</span>
           </motion.h1>
 
           <p className="mt-4 max-w-lg">

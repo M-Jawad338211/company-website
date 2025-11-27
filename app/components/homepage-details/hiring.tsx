@@ -38,7 +38,7 @@ export default function Hiring() {
 
           <Link
             href="/contacts"
-            className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition"
+            className="group flex items-center gap-6 bg-white hover:bg-primary hover:text-white text-secondary font-bold text-xl md:text-2xl pl-10 pr-2 py-2 rounded-full shadow-sm  transition"
           >
             Hire Us
             <span className="flex items-center justify-center bg-primary group-hover:bg-secondary w-10 h-10 rounded-full">

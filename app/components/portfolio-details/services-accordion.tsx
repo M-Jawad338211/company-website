@@ -101,7 +101,8 @@ export default function ServicesAccordion() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-white text-center lg:text-left mb-6 xl:mb-16 lg:ml-5"
             >
-              Works that Power Growth
+              Works that <span className="text-light-primary">Power</span>{" "}
+              Growth
             </motion.h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
