@@ -5,6 +5,8 @@
   --primary: #983232;
   --light-primary: #e35151;
   --secondary: #0a3253;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
