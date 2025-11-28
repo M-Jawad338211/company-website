@@ -160,6 +160,7 @@ export default function Services() {
 
   return (
     <div className="relative px-4 sm:px-12 lg:px-16 xl:px-28 pt-16  w-full h-full items-center justify-center text-center overflow-hidden">
+      <div className="absolute inset-0 bg-linear-to-b from-black to-transparent -z-20"></div>
       <div className="absolute inset-4 -z-10">
         <Image
           src="/png/services-bg.png"
@@ -169,6 +170,7 @@ export default function Services() {
           className="object-cover bg-no-repeat"
         />
       </div>
+
       <div className="flex flex-col items-center justify-center">
         <motion.h2
           initial={{ opacity: 0, y: -40 }}

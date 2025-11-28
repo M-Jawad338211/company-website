@@ -10,25 +10,19 @@ export default function Projects() {
 
   return (
     <div className="relative px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-12 sm:py-16 md:py-20 lg:py-24 w-full h-full text-center">
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-20">
         <Image
-          src="/png/projects-bg.png"
+          src="/png/projects.png"
           alt="Background"
           fill
           priority
           className="object-cover bg-no-repeat"
         />
       </div>
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/png/projects-bg-2.png"
-          alt="Background"
-          fill
-          priority
-          className="object-cover bg-no-repeat"
-        />
-      </div>
-      <div className="flex flex-col items-center">
+
+      <div className="absolute inset-0 bg-linear-to-b from-background to-transparent z-0 pointer-events-none"></div>
+
+      <div className="relative z-10 flex flex-col items-center">
         <p>70+ Successful Projects</p>
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
@@ -56,13 +50,16 @@ export default function Projects() {
 
         <div className="w-full h-auto bg-[url('/png/checks-bg.png')] bg-no-repeat bg-center bg-cover p-6 xl:p-10 2xl:p-16 rounded-2xl shadow-lg space-y-6 flex flex-col md:gap-6 lg:gap-10 xl:gap-44">
           <div className="space-y-6 xl:space-y-16">
-            <h3 className="text-white xl:text-3xl text-left max-w-2xl">
+            <h3 className="relative z-10 text-white xl:text-3xl text-left max-w-2xl">
               Unitfactor is your perfect choice in terms of:
             </h3>
 
             <ul className="space-y-3 xl:space-y-12">
               {strategies.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 xl:gap-5">
+                <li
+                  key={idx}
+                  className="relative z-10 flex items-start gap-2 xl:gap-5"
+                >
                   <Image
                     src={"/png/check.png"}
                     alt="Check Icon"

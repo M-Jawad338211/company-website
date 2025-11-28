@@ -4,8 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Partners() {
   return (
-    <div className="px-6 sm:px-12 md:px-12 lg:px-16 xl:px-28 pb-10 lg:pb-20  xl:pb-24 w-full h-full items-center justify-center text-center bg-black">
-      <div className="w-full  mx-auto bg-[url('/solutions-bg.png')] bg-cover bg-center bg-no-repeat rounded-[20px] md:rounded-[30px] flex flex-col lg:flex-row gap-8 md:gap-12 2xl:gap-0 items-center mt-10">
+    <div className="relative px-6 sm:px-12 md:px-12 lg:px-16 xl:px-28 pb-10 lg:pb-20  xl:pb-24 w-full h-full items-center justify-center text-center">
+      <div className="absolute inset-0 -z-20">
+        <Image
+          src="/png/partners-bg.png"
+          alt="Background"
+          fill
+          priority
+          className="object-cover bg-no-repeat"
+        />
+      </div>
+      <div className="w-full  mx-auto rounded-[20px] md:rounded-[30px] flex flex-col lg:flex-row gap-8 md:gap-12 2xl:gap-0 items-center ">
         <div className="w-full h-auto space-y-6 lg:space-y-20 flex flex-col items-center lg:items-start justify-center lg:justify-between text-center lg:text-left">
           <motion.h2
             initial={{ opacity: 0, y: -40 }}

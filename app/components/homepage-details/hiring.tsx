@@ -12,6 +12,7 @@ const logos = [
 export default function Hiring() {
   return (
     <div className="relative w-full h-auto bg-[url('/png/hero.png')] bg-no-repeat bg-center bg-cover overflow-hidden ">
+      <div className="absolute inset-0 bg-linear-to-t from-background to-transparent pointer-events-none"></div>
       <div className="relative flex flex-col items-center lg:gap-14 justify-center h-full pb-10 pt-32 xl:pb-10 px-4 sm:px-12 lg:px-16 xl:px-28">
         <div className="flex flex-col items-center gap-7 mt-6 sm:mt-8 mb-8 sm:mb-10">
           <motion.h1
