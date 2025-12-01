@@ -10,8 +10,9 @@ export default function Contacts() {
   ];
 
   return (
-    <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-28 md:py-48  w-full h-full flex items-center justify-center text-center bg-[url('/png/project-bg.png')] bg-no-repeat bg-center bg-cover">
-      <div className="flex flex-col lg:flex-row gap-8 w-full ">
+    <div className="relative px-4 sm:px-12 lg:px-16 xl:px-28  pt-28 md:pt-36 lg:pt-48  w-full h-full flex items-center justify-center text-center bg-[url('/png/project-bg.png')] bg-no-repeat bg-center bg-cover">
+      <div className="absolute bottom-0 left-0 right-0 h-20  bg-linear-to-t from-background to-transparent z-10 pointer-events-none"></div>
+      <div className="relative flex flex-col lg:flex-row gap-8 w-full z-10 ">
         <div className="bg-[url('/png/management.png')] bg-cover bg-no-repeat rounded-3xl shadow-lg p-6 md:p-8 w-full lg:w-1/2 text-white flex flex-col gap-6">
           <div className="flex justify-center gap-6 md:gap-10 md:flex-wrap">
             <div className="flex flex-col items-center">

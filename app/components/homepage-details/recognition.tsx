@@ -34,7 +34,7 @@ export default function Recognition() {
 
   return (
     <div className="w-full bg-black text-white px-4 md:py-10 md:px-20 xl:px-28 relative">
-      <div className="hidden md:flex absolute right-26 md:right-20  lg:right-26 top-26 md:top-22 xl:top-35 z-20 flex gap-3 mt-3 lg:mt-0">
+      <div className="hidden md:flex absolute right-26 md:right-20  lg:right-26 top-26 md:top-22 xl:top-35 z-20  gap-3 mt-3 lg:mt-0">
         <div className="swiper-prev bg-white  text-black rounded-full px-4 py-6 flex items-center justify-center cursor-pointer shadow-md text-xl">
           <Image src="/svg/arrow.svg" alt="arrow" width={32} height={18} />
         </div>

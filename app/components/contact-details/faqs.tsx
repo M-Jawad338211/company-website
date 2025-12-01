@@ -35,7 +35,8 @@ export default function Faqs() {
   ];
 
   return (
-    <div className="px-4 sm:px-12 lg:px-16 xl:px-28  py-12 md:py-16 lg:py-20 xl:py-28 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/png/rectangle770.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+    <div className="relative px-4 sm:px-12 lg:px-16 xl:px-28  pt-12 md:pt-16 lg:pt-20  xl:pt-28 xl:pb-16 w-full h-full flex flex-col items-center justify-center text-center bg-[url('/png/faqs-bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
+      <div className="absolute bottom-0 left-0 right-0 h-20  bg-linear-to-t from-background to-transparent z-10 pointer-events-none"></div>
       <motion.h2
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -28,7 +28,7 @@ export default function Experiences() {
             viewBox="0 0 46 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className=" text-[#983232] group-hover:text-white  mt-1 lg:mt-2 w-9 h-[18px] lg:w-[46px] lg:h-[22px]"
+            className=" text-primary group-hover:text-white  mt-1 lg:mt-2 w-9 h-[18px] lg:w-[46px] lg:h-[22px]"
           >
             <g clipPath="url(#clip0_1152_208)">
               <path
@@ -306,6 +306,9 @@ export default function Experiences() {
   ];
   return (
     <div className="relative flex flex-col px-4  md:px-20 xl:px-28 w-full h-full items-center justify-center text-center  overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-background to-transparent z-0 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-background to-transparent z-0 pointer-events-none"></div>
+
       <div className="absolute inset-0 -z-10">
         <Image
           src="/png/experience-bg-1.png"
@@ -329,17 +332,17 @@ export default function Experiences() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="max-w-2xl"
+        className="max-w-2xl z-0"
       >
         We have <span className="text-light-primary">extensive</span> industry
         experiences
       </motion.h2>
-      <p className="max-w-2xl mt-6 ">
+      <p className="max-w-2xl mt-6 z-0">
         Our Team have completed projects in different niches. They know how to
         add business value and provide personalized design solutions for your
         digital product.
       </p>
-      <div className="max-w-6xl mx-auto pt-6 md:pt-16">
+      <div className="max-w-6xl mx-auto pt-6 md:pt-16 z-0">
         <div className="flex flex-wrap justify-center gap-6">
           {services.map((service, index) => (
             <div

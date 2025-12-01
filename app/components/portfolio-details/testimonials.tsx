@@ -45,7 +45,9 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="w-full bg-[url('/png/new-choices.png')] bg-cover bg-no-repeat bg-center py-12 md:py-16 lg:py-20 xl:py-28 px-4 md:px-18 xl:px-32 2xl:px-28">
+    <section className="relative w-full bg-[url('/png/new-choices.png')] bg-cover bg-no-repeat bg-center py-12  px-4 md:px-18 xl:px-32 2xl:px-28">
+      <div className="absolute top-0 left-0 right-0 h-20  bg-linear-to-b from-background to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-20  bg-linear-to-t from-background to-transparent z-10 pointer-events-none"></div>
       <div className="w-full mx-auto flex flex-col gap-12 lg:gap-20">
         <motion.h2
           initial={{ opacity: 0, y: -40 }}

@@ -10,7 +10,9 @@ export default function Recognitions() {
   ];
 
   return (
-    <section className="px-6 sm:px-12 md:px-16 lg:px-12 xl:px-28 py-12 md:py-16 lg:py-20 xl:py-28 w-full bg-[url('/png/recognition-bg.png')] bg-no-repeat bg-center bg-cover">
+    <section className="relative px-6 sm:px-12 md:px-16 lg:px-12 xl:px-28 py-12 md:pt-16 lg:pt-20 xl:pt-28  w-full bg-[url('/png/recognition-bg.png')] bg-no-repeat bg-center bg-cover">
+      <div className="absolute top-0 left-0 right-0 h-30  bg-linear-to-b from-background to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-30  bg-linear-to-t from-background to-transparent z-10 pointer-events-none"></div>
       <div className="flex items-center justify-center text-center">
         <motion.h2
           initial={{ opacity: 0, y: -40 }}

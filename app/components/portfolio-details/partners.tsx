@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Partners() {
   return (
-    <div className="px-4 md:px-6 xl:px-24 2xl:px-16  w-full h-full items-center justify-center text-center bg-[url('/png/portfolio-bg.png')] bg-center bg-no-repeat bg-cover pt-20 md:pt-40">
+    <div className="relative px-4 md:px-6 xl:px-24 2xl:px-16  w-full h-full items-center justify-center text-center bg-[url('/png/portfolio-bg.png')] bg-center bg-no-repeat bg-cover pt-20 xl:pt-40">
       <div className=" w-full p-6 md:p-10 mx-auto rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12  items-stretch mt-6 md:mt-10">
         <div className="w-full  flex flex-col">
           <div className=" flex flex-col gap-8 xl:gap-6 2xl:gap-13 items-center md:items-start w-full">

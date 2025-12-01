@@ -57,7 +57,9 @@ export default function ServicesAccordion() {
   ];
 
   return (
-    <div className="px-6 sm:px-12 xl:px-28  py-16 xl:py-24 w-full h-full items-center justify-center text-center bg-[url('/png/cards.png')] bg-center bg-no-repeat bg-cover">
+    <div className="relative px-6 sm:px-12 xl:px-28  pt-16 xl:pt-24 w-full h-full items-center justify-center text-center bg-[url('/png/cards.png')] bg-center bg-no-repeat bg-cover">
+      <div className="absolute top-0 left-0 right-0 h-20  bg-linear-to-b from-background to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-40  bg-linear-to-t from-background to-transparent z-10 pointer-events-none"></div>
       <div className="flex flex-col xl:flex-row justify-between gap-8 2xl:gap-0  ">
         <div className="flex flex-col items-center xl:items-start ">
           <div className="bg-black border border-[#A7A7A7] text-white rounded-2xl p-4 sm:p-10 w-full sm:w-[320px]">
@@ -105,7 +107,7 @@ export default function ServicesAccordion() {
               Growth
             </motion.h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 ">
               {works.map((work) => (
                 <div
                   key={work.id}
@@ -135,7 +137,7 @@ export default function ServicesAccordion() {
                     {work.description}
                   </p>
 
-                  <div className="flex items-start gap-2 sm:gap-3 flex-wrap">
+                  <div className="flex items-start gap-2 sm:gap-3 flex-wrap relative z-10 ">
                     {work.tags.map((tag, idx) => (
                       <span
                         key={idx}
